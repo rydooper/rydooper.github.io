@@ -1,0 +1,15 @@
+/* stylesheet for portfolio website */
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-family: Franklin Gothic Medium;
+    font-size: 20px;
+}
