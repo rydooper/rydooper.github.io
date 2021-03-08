@@ -1,23 +1,80 @@
 /* stylesheet for portfolio website */
-
+/* basic setups */
 body {
+    margin: 0px;
     background-color: powderblue;
 }
 
+#main {
+    background-color: powderblue;
+    border-radius: 25px;
+    margin: 0 20%;
+    padding: 5%;
+}
+
 h1 {
+    padding: 25px;
+    padding-top: 50px;
     color: black;
     text-align: center;
 }
-
-p.portfolioText {
-    text-align: float left;
+/*section for nav bar */
+nav {
+    background-color:powderblue;
+    padding: 0px;
+    width:100%;
+    position:absolute;
+    top:0px;
+}
+nav a{
+    float: left;
+    text-align: centrer;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
 }
 
-image {
-    text-align: float right;
+nav a:hover{
+    background-color:aqua;
+}
+/* more setup*/
+#mainNav {
+    width: 50%;
 }
 
 p {
     font-family: Franklin Gothic Medium;
     font-size: 20px;
+}
+
+/* for the extended sections */
+.column {
+    border-radius:25px;
+    width: 45%;
+    padding: 1%;
+    margin: 0.5%;
+    float: left;
+    background-color: powderblue;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+
+.homeTabs{
+    border-radius: 25px;
+    padding: 5%;
+    margin: 10%;
+    background-color: aqua;
+    clear: both;
+}
+
+.btn{
+    width: 20%;
+}
+
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }
