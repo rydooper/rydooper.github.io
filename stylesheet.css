@@ -1,5 +1,6 @@
 /* stylesheet for portfolio website */
-/* basic setups */
+
+/* setup */
 body {
     margin: 0px;
     background-color: powderblue;
@@ -7,8 +8,8 @@ body {
 
 #main {
     background-color: powderblue;
-    border-radius: 25px;
-    margin: 0 20%;
+    border-radius: 10px;
+    margin: 0;
     padding: 5%;
 }
 
@@ -18,26 +19,13 @@ h1 {
     color: black;
     text-align: center;
 }
-/*section for nav bar */
-nav {
-    background-color:powderblue;
-    padding: 0px;
-    width:100%;
-    position:absolute;
-    top:0px;
-}
-nav a{
-    float: left;
-    text-align: centrer;
-    padding: 15px;
-    text-decoration: none;
-    color: black;
+
+image {
+    width: 40%;
+    height: 40%;
+    background-color: white;
 }
 
-nav a:hover{
-    background-color:aqua;
-}
-/* more setup*/
 #mainNav {
     width: 50%;
 }
@@ -47,10 +35,29 @@ p {
     font-size: 20px;
 }
 
+/* section for nav bar */
+nav {
+    background-color:powderblue;
+    padding: 0px;
+    width:50%;
+    position:relative;
+    top: 0px;
+}
+nav a{
+    float: left;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    background-color:white;
+}
+
 /* for the extended sections */
 .column {
     border-radius:25px;
-    width: 45%;
+    width: 25%;
     padding: 1%;
     margin: 0.5%;
     float: left;

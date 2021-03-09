@@ -2,7 +2,7 @@
 <html lang="en-UK">
     <head>
         <!--set up of page, adding responsive, CSS and JS-->
-        <title>R.Franklin Portfolio Website</title>
+        <title>Ryder Franklin</title>
         <meta charset="utf-8" />
         <meta name="Author" content="Ryder Franklin">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +11,29 @@
     </head>
     <body>
         <nav id="mainNav">
-            <a class="active" href="index.html"> Homepage</a>
+            <a class="active" href="index.html"><img src="homeIcon.png" width="64" height="64"></a> <!-- image by Dave Gandy on flaticon- https://www.flaticon.com/authors/dave-gandy-->
+            <b class="active" href="https://github.com/rydooper"><img src="githubIcon.png" width="64" height="64"></b>
+            <c class="active" href="https://www.linkedin.com/in/ryderfranklin2000"><img src="linkedinIcon.png" width="64" height="64"></c>
         </nav>
-        <section id="main">
-            <h1> Portfolio Website </h1>
-                <hr>
-            <h2> What is this site? </h2>
-                <p> This is a portfolio of various projects that I have made, a more detailed look at projects
-                    I am currently working on and what I am hoping to make in the future!</p>
-        </section>
+        <hr>
+        <h1> Ryder Franklin - Portfolio </h1>
+
         <div class="row">
+            <div class="column" onclick="openTab('abt site');"><p> About This Site </p></div>
             <div class="column" onclick="openTab('abt me');"><p> About Me </p></div>
             <div class="column" onclick="openTab('contact me');"><p> Contact Me </p></div>
         </div>
         <!-- expanding grid -->
+        <div id="abt site" class="homeTabs" style="display:none;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
+            <h2> What is this site? </h2>
+            <p> This is a portfolio of various projects that I have made, a more detailed look at projects that
+                I am currently working on and what I am hoping to make in the future!</p>
+        </div>
+        
         <div id="abt me" class="homeTabs" style="display:none;">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
-            <img class="imageMe" src="image_Ryder.jpg" alt="a photo of me, a white person with red hair and red glasses, wearing a blue shirt" width="306" height="408">
+            <img class="imageMe" src="imageRyder.jpg" alt="a photo of me, a white person with red hair and red glasses, wearing a blue shirt" width="306" height="408">
             <h2> Who Am I? </h2>
             <p> Howdy! I'm Ryder Franklin, a 2nd Year Computer Science student at Nottingham Trent University. <br>
                 I enjoy programming in Python and HTML and I particularly like machine learning! <br>
