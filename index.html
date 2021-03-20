@@ -7,15 +7,19 @@
         <meta name="Author" content="Ryder Franklin">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
-        <script type="text/javascript" src="Javascript.js" async defer></script>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin type="text/babel"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin type="text/babel"></script>
+    
     </head>
     <body>
+        <!-- nav bar -->
         <nav id="mainNav">
             <a class="active" href="index.html"><img src="homeIcon.png" width="64" height="64"></a> <!-- image by Dave Gandy on flaticon- https://www.flaticon.com/authors/dave-gandy-->
             <b class="active" href="https://github.com/rydooper"><img src="githubIcon.png" width="64" height="64"></b>
             <c class="active" href="https://www.linkedin.com/in/ryderfranklin2000"><img src="linkedinIcon.png" width="64" height="64"></c>
         </nav>
         <hr>
+
         <h1> Ryder Franklin - Portfolio </h1>
 
         <div class="row">
@@ -23,6 +27,7 @@
             <div class="column" onclick="openTab('abt me');"><p> About Me </p></div>
             <div class="column" onclick="openTab('contact me');"><p> Contact Me </p></div>
         </div>
+
         <!-- expanding grid -->
         <div id="abt site" class="homeTabs" style="display:none;">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
@@ -47,6 +52,11 @@
                 I can be contacted on <a href="https://www.linkedin.com/in/ryderfranklin2000">LinkedIn</a> or
                 by <a href="ryderarenfranklin@gmail.com">email</a>! :) </p>
         </div>
-    <p style="clear: both"><sub>Website in development!</sub></p>
+
+        <p style="clear: both"><sub>Website in development!</sub></p>
+        <div id="like_button_container"></div>
+
+    <!--<script type="text/javascript" src="src/Javascript.js" async defer></script>-->
+    <script type="javascript" src="src/like_button.js"></script>
 </body>
 </html>
