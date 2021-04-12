@@ -14,15 +14,20 @@
     <body>
         <!-- nav bar -->
         <nav id="mainNav">
-            <a class="active" href="index.html"><img src="homeIcon.png" width="64" height="64"></a> <!-- image by Dave Gandy on flaticon- https://www.flaticon.com/authors/dave-gandy-->
-            <b class="active" href="https://github.com/rydooper"><img src="githubIcon.png" width="64" height="64"></b>
-            <c class="active" href="https://www.linkedin.com/in/ryderfranklin2000"><img src="linkedinIcon.png" width="64" height="64"></c>
+            <a class="navbar-index" style="font-size:28px; font-family: 'Franklin Gothic Medium'" href="index.html"><img src="homeIcon.png" width="64" height="64"></a><!-- image by Dave Gandy on flaticon- https://www.flaticon.com/authors/dave-gandy-->
+            <b class="navbar-github" href="https://github.com/rydooper"><img src="githubIcon.png" width="64" height="64"></b>
+            <c class="navbar-linkedin" href="https://www.linkedin.com/in/ryderfranklin2000"><img src="linkedinIcon.png" width="64" height="64"></c>
         </nav>
         <hr>
-
-        <h1> Ryder Franklin - Portfolio </h1>
-
-        <img src-"imageBlencathraBridge" alt="a photo of a bridge in Blencathra">
+        <header>
+            <div class="overlay"></div>
+            
+            <p class="portfolioVideo">
+                <video playsinline="playsnline" autoplay="autoplay" muted="muted" loop="none">
+                    <source src="portfolio video.mp4" type="video/mp4">
+                </video>
+            </p>      
+        </header>
 
         <div class="row">
             <div class="column" onclick="openTab('abt site');"><p> About This Site </p></div>
@@ -58,7 +63,7 @@
         <p style="clear: both"><sub>Website in development!</sub></p>
         <div id="like_button_container"></div>
 
-    <!--<script type="text/javascript" src="src/Javascript.js" async defer></script>-->
+    <script type="text/javascript" src="src/Javascript.js" async defer></script>
     <script type="javascript" src="src/like_button.js"></script>
 </body>
 </html>
