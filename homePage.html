@@ -7,16 +7,61 @@
         <meta name="Author" content="Ryder Franklin">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin type="text/babel"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin type="text/babel"></script>
+    
     </head>
-    <body style="background-color: black;">
-        <p class="portfolioGif">
-            <img src="portfolioGif.gif" type="image/gif" width=100% height=95%>
-        </p>
-        <div class="center">
-            <button href="index.html" class="continueButton"> Continue </button>
-        </div>
-          
+    <body>
+        <!-- nav bar -->
+        <nav id="mainNav">
+            <a class="navbar-index" style="font-size:28px; font-family: 'Franklin Gothic Medium'"><a href="index.html"><img src="homeIcon.png" width="64" height="64"></a></a><!-- image by Dave Gandy on flaticon- https://www.flaticon.com/authors/dave-gandy-->
+            <b class="navbar-github"><a href="https://github.com/rydooper"><img src="githubIcon.png" width="64" height="64"></a></b>
+            <c class="navbar-linkedin"><a href="https://www.linkedin.com/in/ryderfranklin2000"><img src="linkedinIcon.png" width="64" height="64"></a></c>
+        </nav>
+        <hr>
+        <header>
+            <div class="overlay"></div>
+            
+            <p class="portfolioGif">
+                <img src="portfolioGif.gif" type="image/gif" width=100% height=75%>
+            </p>      
+        </header>
 
+        <div class="row">
+            <div class="column" onclick="openTab('abt site');"><p> About This Site </p></div>
+            <div class="column" onclick="openTab('abt me');"><p> About Me </p></div>
+            <div class="column" onclick="openTab('contact me');"><p> Contact Me </p></div>
+        </div>
+
+        <!-- expanding grid -->
+        <div id="abt site" class="homeTabs" style="display:none;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
+            <h2> What is this site? </h2>
+            <p> This is a portfolio of various projects that I have made, a more detailed look at projects that
+                I am currently working on and what I am hoping to make in the future!</p>
+        </div>
         
-    </body>
+        <div id="abt me" class="homeTabs" style="display:none;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
+            <img class="imageMe" src="imageRyder.jpg" alt="a photo of me, a white person with red hair and red glasses, wearing a blue shirt" width="306" height="408">
+            <h2> Who Am I? </h2>
+            <p> Howdy! I'm Ryder Franklin, a 2nd Year Computer Science student at Nottingham Trent University. <br>
+                I enjoy programming in Python and HTML and I particularly like machine learning! <br>
+                In my spare time, I am learning to speak Russian and I am writing a Fantasy novel!</p>
+        </div>
+        <div id="contact me" class="homeTabs" style="display:none;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
+            <h2> Where can I be contacted? </h2>
+            <p> My <a href="https://github.com/rydooper">Github account</a> contains all my coding projects,
+                with the exception of my machine learning on <a href="https://www.kaggle.com/ryderfranklin/notebooks">Kaggle</a>.<br>
+                I can be contacted on <a href="https://www.linkedin.com/in/ryderfranklin2000">LinkedIn</a> or
+                by <a href="mailto:ryderarenfranklin@gmail.com">email</a>! :) </p>
+        </div>
+
+        <p style="clear: both"><sub>Website in development!</sub></p>
+        <div id="like_button_container"></div>
+
+    <script type="text/javascript" src="src/Javascript.js" async defer></script>
+    <script type="javascript" src="src/like_button.js"></script>
+</body>
 </html>
