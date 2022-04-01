@@ -1,17 +1,28 @@
-  body {
-    background-color: black;
-  }
-  
-  h1 {
-    color: navy;
-    margin-left: 20px;
-  }
+body {
+  background-color: lightslategray;
+}
 
-  p {
-    font-style: normal;
-    color: white;
-  }
-  .dropdown-item {
-    width: 3em;
-    height: 3em;
-  }
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+h3 {
+  color: white;
+  text-underline-position: end;
+}
+
+h4 {
+  color: lightcoral;
+}
+
+p {
+  font-style: normal;
+  color: white;
+  align-items: center;
+}
+
+.dropdown-item {
+  width: 3em;
+  height: 3em;
+}
