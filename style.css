@@ -9,11 +9,16 @@ h1 {
 
 h3 {
   color: white;
-  text-underline-position: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h4 {
   color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
@@ -25,4 +30,17 @@ p {
 .dropdown-item {
   width: 3em;
   height: 3em;
+}
+.container {
+  position:relative;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
