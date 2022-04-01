@@ -1,0 +1,17 @@
+  body {
+    background-color: black;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+
+  p {
+    font-style: normal;
+    color: white;
+  }
+  .dropdown-item {
+    width: 3em;
+    height: 3em;
+  }
