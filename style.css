@@ -31,8 +31,9 @@ p {
   width: 3em;
   height: 3em;
 }
+
 .container {
-  position:relative;
+  position: relative;
 }
 
 .text-block {
@@ -45,8 +46,8 @@ p {
   padding-right: 20px;
 }
 
- /* The grid: Three equal columns that floats next to each other */
- .column {
+/* The grid: Three equal columns that floats next to each other */
+.column {
   float: left;
   width: 33.33%;
   padding: 50px;
@@ -74,4 +75,4 @@ p {
   color: white;
   font-size: 35px;
   cursor: pointer;
-} 
+}
