@@ -1,5 +1,5 @@
 body {
-  background-color: lightslategray;
+  background-color: #007013da;
 }
 
 h1 {
@@ -8,7 +8,7 @@ h1 {
 }
 
 h3 {
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@ h4 {
 
 p {
   font-style: normal;
-  color: white;
+  color: black;
   align-items: center;
 }
 
@@ -40,7 +40,7 @@ p {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-color: black;
+  background-color: lightgrey;
   color: white;
   padding-left: 20px;
   padding-right: 20px;

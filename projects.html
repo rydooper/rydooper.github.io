@@ -35,8 +35,10 @@
                             Contact Links
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a href="https://github.com/rydooper"><img class="dropdown-item" src="assets/images/github.svg"></a></li>
-                            <li><a href="https://www.linkedin.com/in/ryderfranklin2000"><img class="dropdown-item" src="../assets/images/linkedin.svg"></a></li>
+                            <li><a href="https://github.com/rydooper"><img class="dropdown-item"
+                                        src="assets/images/github.svg"></a></li>
+                            <li><a href="https://www.linkedin.com/in/ryderfranklin2000"><img class="dropdown-item"
+                                        src="../assets/images/linkedin.svg"></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -45,122 +47,194 @@
     </nav>
 
     <main id="main">
-        <br>
-        <br>
-        <br>
+
         <h1> <u> Projects </u> </h1>
         <hr>
-        <h3> <u> Currently Active </u> </h3>
+        <h3> <u> Works In Progress </u> </h3>
 
-        <div class="row">
-            <div class="column" onclick="openTab('currentProjects');" style="background:#aba6a0;">Currently Active </div>
-        </div>
-
-        <!-- The expanding grid (hidden by default) -->
-        <div id="currentProjects" class="expandable-projects" style="display:none;background:#aba6a0">
-            <!-- If you want the ability to close the container, add a close button -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-            <div id="artie-div">
-                <h4> Artie </h4>
-                <p> Artie is a personal project of mine that I've been working on since September 2021! He's a voice
-                    assistant in the making, built in Python.
-                    <br> Currently, his functionality involves a login system, use of the wikipedia API, telling the
-                    user a joke, and locking or shutting down the computer.
-                    <br> In the future, his functionality will also include: getting the weather for a given location.
-                    In a more vague sense, I will be implementing some machine learning so that
-                    Artie can retain "memories" in a more permanent manner, as well as giving him a much wider
-                    functionality that allows him to be used casually. <br>
-                    Out of all of my projects, Artie is the most long-term and will be continuously updated over the
-                    years.
-                </p>
-            </div>
-            <br>
-            <div id="funkos-bot-div">
-                <h4> Funko Europe Discord Bot </h4>
-                <p> Have you ever thought: is there a funko of that? That's what this bot aims to answer. <br>
-                    Originally conceived during HackNotts2021, our team successfully implemented a basic webscraper of
-                    the Funko Europe website, storage into a csv file and then some discord bot functionality.
-                    <br> Sadly, we weren't able to complete the bot (Neil) during the 24-hour time constraint of the
-                    hackathon. In the future, we intend to complete the base functionality and I intend to add more
-                    websites to the webscraper.
-                </p>
-            </div>
-            <br>
-            <div id="webscraper-div">
-                <h4> Final Year Project - BBC Article Webscraper </h4>
-                <p> This project, officially titled "Artificial Intelligence: Automatic News Extraction" is for my final
-                    year project - aka my dissertation - and is open-source.
-                    <br> Essentially, my project uses a Selenium webscraper to get news articles from the BBC News
-                    website, based on a users' query. This data is then analysed and graphed using hot topic extraction.
-                    <br> For future development, I would like to increase the corpus of the project, by adding more
-                    websites to the webscraper and implementing further search features, along with a machine learning
-                    algorithm that ignores potentially "fake" or malicious news.
-                </p>
-                <button type="button" id="FYPLink"
-                    onclick="window.location.href='https://github.com/rydooper/FYPCode';"> Click to view
-                    FYP code! </button>
+        <div id="currentProjects" style="background:ghostwhite">
+            <div class="card rounded my-5" id="artie-div">
+                <div class="row mx-1 mx-md-5">
+                    <h2 class="mt-5 d-flex">
+                        <b>
+                            Artie
+                        </b>
+                    </h2>
+                    <div class="mt-4">
+                        <p> Artie is a personal project of mine that I've been working on since September 2021! He's a
+                            voice
+                            assistant in the making, built in Python.
+                            <br> Currently, his functionality involves a login system, use of the wikipedia API, telling
+                            the
+                            user a joke, and locking or shutting down the computer.
+                            <br> In the future, his functionality will also include: getting the weather for a given
+                            location.
+                            In a more vague sense, I will be implementing some machine learning so that
+                            Artie can retain "memories" in a more permanent manner, as well as giving him a much wider
+                            functionality that allows him to be used casually. <br>
+                            Out of all of my projects, Artie is the most long-term and will be continuously updated over
+                            the
+                            years.
+                        </p>
+                    </div>
+                </div>
+                <br>
             </div>
         </div>
 
+        <br>
         <h3> <u> Completed Projects </u> </h3>
-        <div class="row">
-            <div class="column" onclick="openTab('completedProfProjects');" style="background:#59595b;">Professional</div>
-            <div class="column" onclick="openTab('completedUniProjects');" style="background:#aba6a0;">University</div>
-            <div class="column" onclick="openTab('completedPersonalProjects');" style="background:#921b1d;">Personal</div>
-        </div>
-        <div id="completedProfProjects" class="expandable-projects" style="display:none;background:#59595b">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-            <h4> Professional </h4>
+        <h4> Professional </h4>
+        <div id="completedProfProjects" style="background:ghostwhite">
             <div id="professional-project">
-                <div id="forge-viewer">
-                    <h5> Autodesk Forge Viewer </h5>
-                    <p> This project is something that I created for a project ran within NTU's School of Architecture,
-                        Design and the Built Environment.
-                        <br>
-                        In essence, I used Autodesk Forges' API to build a viewer for specified file types - often RVT
-                        files
-                        - to display bridges for the Asset Visualiser website that is currently under development, in
-                        partnership with Waldeck Consulting.
-                        Though the project's code and appearance is secret, it is similar in appearance to Autodesk
-                        Forges'
-                        own online viewer, which can be seen <a href="https://viewer.autodesk.com/">here</a>.
-                        <br> <b>An account on Autodesk is required to view this.</b>
-                    </p>
+                <div class="card rounded my-5" id="forge-viewer">
+                    <div class="row mx-1 mx-md-5">
+                        <h2 class="mt-5 d-flex">
+                            <b>
+                                Autodesk forge viewer
+                            </b>
+                        </h2>
+                        <div class="mt-4">
+                            <p> This project is something that I created for a project ran within NTU's School of
+                                Architecture,
+                                Design and the Built Environment.
+                                <br>
+                                In essence, I used Autodesk Forges' API to build a viewer for specified file types -
+                                often
+                                RVT
+                                files
+                                - to display bridges for the Asset Visualiser website that is currently under
+                                development,
+                                in
+                                partnership with Waldeck Consulting.
+                                Though the project's code is obviously private, it is similar in appearance to
+                                Autodesk
+                                Forges' own online viewer, which can be seen <a
+                                    href="https://viewer.autodesk.com/">here.</a>.
+                                <br> <b>An account on Autodesk is required to view this.</b>
+                            </p>
+                        </div>
+                        <div class="col-mt-6 mt-4">
+                            <img src="/assets/images/forge_viewer_sample.png"
+                                alt="screenshot from the autodesk 3D viewer" style="width:50%; height:50%;">
+                        </div>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="completedUniProjects" class="expandable-projects" style="display:none;background:#aba6a0">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-            <h4> University </h4>
+        <br>
+        <div class="card rounded my-5" id="potree-viewer" style="background-color: ghostwhite;">
+            <div class="row mx-1 mx-md-5">
+                <h2 class="mt-5 d-flex">
+                    <b>
+                        Pointcloud viewer
+                    </b>
+                </h2>
+                <div class="mt-4">
+                    <p>
+                        This project is also something I worked on while working with the architectural team.
+                        Essentially, this viewer allows pointclouds to be viewed online and uses the open-source WebGL
+                        based point cloud renderer known as Potree, which can be found <a
+                            href="https://potree.github.io/">
+                            here.</a>
+                    </p>
+                </div>
+                <div class="col-mt-6 mt-4">
+                    <img src="/assets/images/potee_viewer_sample.png" alt="screenshot from the potree viewer website"
+                        style="width:50%; height:50%;">
+                </div>
+            </div>
+        </div>
+        <h4> University </h4>
+        <div id="completedUniProjects" style="background:grey">
             <div id="uni-projects">
-                <div id="scc">
-                    <h5> Service-Centric and Cloud Computing (SCC) </h5>
+                <div class="card rounded my-5" id="uni-fyp-webscraper" style="background-color: ghostwhite;">
+                    <div class="row mx-1 mx-md-5">
+                        <h2 class="mt-5 d-flex">
+                            <b>
+                                Final Year Project - BBC Article Webscraper
+                            </b>
+                        </h2>
+                        <div class="mt-4">
+                            <p> This project, officially titled "Artificial Intelligence: Automatic News Extraction" was
+                                for my
+                                final
+                                year project - aka my dissertation - and is open-source.
+                                <br> Essentially, my project uses a Selenium webscraper to get news articles from the
+                                BBC News
+                                website, based on a users' query. This data is then analysed and graphed using hot topic
+                                extraction. An example wordcloud can be found below!
+                                <br> For future development, I would like to increase the corpus of the project, by
+                                adding more
+                                websites to the webscraper and implementing further search features, along with a
+                                machine
+                                learning
+                                algorithm that ignores potentially "fake" or malicious news. However, there are some
+                                legal
+                                issues
+                                with using data from the BBC's website and so it's unlikely this will ever enter a
+                                production
+                                environment - at least, not while using BBC News' site for the corpus.
+                            </p>
+                        </div>
+                        <a class="my-4 d-flex justify-content-center" href="https://github.com/rydooper/FYPCode"
+                            target="_">
+                            <button type="button" class="btn btn-primary"> FYP Code!</button>
+                        </a>
+                        <div class="col-mt-6 mt-4">
+                            <img src="/assets/images/wordCloud-articlesData-ukraine.png"
+                                alt="a wordcloud generated with a search on articles about Ukraine in April 2022"
+                                style="width:50%; height:50%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card rounded my-5" id="uni-scc" style="background-color: ghostwhite;">
+            <div class="row mx-1 mx-md-5">
+                <h2 class="mt-5 d-flex">
+                    <b>
+                        Service-Centric and Cloud Computing (SCC)
+                    </b>
+                </h2>
+                <div class="mt-4">
                     <p> This application was created for my SCC module in third year. It uses the Springboot
                         framework in
                         Java
-                        to host an Apache Tomcat 9.0 server. Using this server and a rest controller, I had several
+                        to host an Apache Tomcat 9.0 server. Using this server and a rest controller, I had
+                        several
                         function calls: <i>/weather</i>, <i>/user</i>, <i>/query</i>, <i>/submit</i> and
                         <i>/intent</i>.
-                        <br> This coursework was a particularly interesting challenge as, at the time, I didn't have
+                        <br> This coursework was a particularly interesting challenge as, at the time, I didn't
+                        have
                         much
                         experience with Java and had never used and barely even heard of REST services.
                         Although my final application had some issues (a lack of non-volatile data storage for
                         example), I'm
                         very proud of this one.
                     </p>
-                    <button type="button" id="SCCLink"
-                        onclick="window.location.href='https://github.com/rydooper/SCC_Coursework';"> Click to view
-                        SCC
-                        code! </button>
                 </div>
-                <br>
-                <hr>
-                <div id="ml">
-                    <h5> Machine Learning </h5>
+                <a class="my-4 d-flex justify-content-center" href="https://github.com/rydooper/SCC_Coursework"
+                    target="_">
+                    <button type="button" class="btn btn-primary"> SCC Code!</button>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="card rounded my-5" id="uni-scc" style="background-color: ghostwhite;">
+            <div class="row mx-1 mx-md-5">
+                <h2 class="mt-5 d-flex">
+                    <b>
+                        Machine Learning
+                    </b>
+                </h2>
+                <div class="mt-4">
                     <p> For my ML module in second year, I used Stack Overflows' developers survey to predict a
                         developers
                         salary, based on the features I selected.
-                        This project is unique in that it is based and runs on Kaggle, using Jupyter Notebook, which
+                        This project is unique in that it is based and runs on Kaggle, using Jupyter Notebook,
+                        which
                         allowed
                         me to run the CPU-intense algorithms.
                         <br> In the end, I selected 13 features, including "Gender", "Sexuality" and "Trans" (a
@@ -169,113 +243,39 @@
                         Ultimately, my model was rather successful (around 70%) and utilised clustering for
                         prediction.
                     </p>
-                    <button type="button" id="MLLink"
-                        onclick="window.location.href='https://www.kaggle.com/code/ryderfranklin/machine-learning-coursework-2021';">
-                        Click to view my ML Code! </button>
                 </div>
-                <br>
-                <hr>
-                <div id="ppm">
-                    <h5> Practical Project Management </h5>
-                    <p> This module in 2020 was interesting for many reasons. Originally, this was a group-work with
-                        five
-                        people. However, due to circumstances beyond our control, our group quickly dwindled in
-                        numbers to
-                        just two - myself and Aurora.
-                        <br> To ensure that we were able to complete this in time, we split the project in half: I
-                        created
-                        the programs' code and Aurora dealt with the design and documentation, which worked out
-                        well!
-                        <br> The final product was MoveBuddy, an application built in Qt with a GUI, that displays
-                        the crime
-                        statistics for a given area in Nottingham. This was intended as a prototype and, in future
-                        versions,
-                        could be extended in location and features.
-                        For example, users could create accounts and login, registering their home location and
-                        getting
-                        relevant local information, as well as a chat system. We felt this would be a very useful
-                        application, especially for students, who may not know what an area is like before they move
-                        for
-                        University.
-                    </p>
-                    <button type="button" id="PPMLink"
-                        onclick="window.location.href='https://github.com/rydooper/Practical-Project-Management-MoveBuddy';">
-                        Click to view my PPM code! </button>
-                </div>
-                <br>
-                <hr>
-                <div id="se">
-                    <h5> Software Engineering </h5>
-                    <p> For my software engineering module in 2020, there were three assignments. Each branch on my
-                        Github
-                        shows the individual assignments.
-                        <br> For the first two, I used pair programming, working with Luke, and each had different
-                        aims.
-                        <br> Assignment 1 involved implementing C++ functions that parse and interpret GPS data from
-                        a text
-                        file.
-                        <br> Assignment 2 involved refactoring existing code to improve code quality and their Boost
-                        UTF
-                        tests.
-                        <br> Assignment 3 involved implementing my own function to use on a GridWorld instance.
-                    </p>
-                    <button type="button" id="SELink"
-                        onclick="window.location.href='https://github.com/rydooper/Software-Engineering-Assignments/tree/Assignment1;'">
-                        Click to view SE code! </button>
-                </div>
+                <a class="my-4 d-flex justify-content-center" href="https://www.kaggle.com/code/ryderfranklin/machine-learning-coursework-2021"
+                    target="_">
+                    <button type="button" class="btn btn-primary"> ML Code!</button>
+                </a>
             </div>
         </div>
-        <div id="completedPersonalProjects" class="expandable-projects" style="display:none;background:#921b1d">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <div id="completedPersonalProjects" style="background:ghostwhite">
             <h4> Personal </h4>
             <div id="personal-projects">
                 <div id="hacknotts2020">
                     <div class="container">
                         <img src="/assets/images/website-screenshot.jpg" alt="screenshot of hacknotts 2020 website"
-                            style="width:90%; height:90%;">
+                            style="width:50%; height:50%;">
                         <div class="text-block">
-                            <h5> HackNotts 2020 </h5>
-                            <p> This project is what our group made for HackNotts 2020. For this, we created a local
+                            <h4> HackNotts 2020 </h4>
+                            <p> This project is what our group made for HackNotts 2020. For this, we created a
+                                local
                                 website
                                 that displays various recipes, filtered by breakfast, lunch and dinner.
-                                <br> It also allows for filtering by recipe contents: meat, fish, gluten-free and
-                                cheese.
+                                <br> It also allows for filtering by recipe contents: meat, fish, gluten-free
+                                and
+                                cheese. <br> Although rather small in scope, this was a great experience for how
+                                quickly
+                                we
+                                could make and complete a project - all while working remotely!
                             </p>
                         </div>
                     </div>
-                    <button type="button" id="HN20"
-                        onclick="window.location.href='https://github.com/rydooper/hacknotts2020-work';"> Click to view
-                        hacknotts 2020 code! </button>
-                </div>
-            </div>
-        </div>
-
-        <h3> <u>Archived Projects</u> </h3>
-        <div class="row">
-            <div class="column" onclick="openTab('archivedProjects');" style="background:#aba6a0;">Archived</div>
-        </div>
-        <div id="archivedProjects" class="expandable-projects" style="display:none;background:#aba6a0">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-            <div id="archived-projects">
-                <p> These projects have been archived for different versions but will be completed, likely after
-                    university.
-                </p>
-                <div id="twitter-bot">
-                    <h5> Twitter Bot - "kingoftheclouds" / quotes </h5>
-                    <p> This is a twitter bot that posts quotes every 30 minutes or so. When running locally, this bot
-                        works
-                        perfectly.
-                        <br> To complete this, I would need more time to figure out a way to host this bot.
-                        From the research I've done, this would probably be best hosted on Heroku.
-                        <br> This code is currently private until completion and to avoid making my keys public.
-                    </p>
-                </div>
-                <div id="translator-discord-bot">
-                    <h5> Discord Bot - Translator </h5>
-                    <p> This is a discord bot that translates Russian into English.
-                        This is currently archived and private, as I haven't fully implemented the translation features
-                        required yet.
-                    </p>
+                    <a class="my-4 d-flex justify-content-center" href="https://github.com/rydooper/hacknotts2020-work"
+                    target="_">
+                    <button type="button" class="btn btn-primary"> hacknotts 2020 Code!</button>
+                </a>
                 </div>
             </div>
         </div>
