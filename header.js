@@ -1,14 +1,16 @@
 document.write('<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">\
 <div class="container-fluid">\
     <a class="navbar-brand" href="index.html">\
-        <img src="../assets/images/homeIcon.png" alt="home image" width="30" height="30"\
+        <div title="Home">\
+        <img src="../assets/images/customHomeIcon.png" alt="home image" width="40" height="40"\
             class="d-inline-block align-text-top">\
-        Home\
+            </div>\
     </a>\
     <a class="navbar-brand" href="projects.html">\
-        <img src="../assets/images/folder.svg" alt="folder image" width="30" height="30"\
+        <div title="Projects">\
+        <img src="../assets/images/customProjectsIcon.png" alt="folder image" width="40" height="40"\
             class="d-inline-block align-text-top">\
-        Projects\
+        </div>\
     </a>\
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"\
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"\
@@ -23,10 +25,9 @@ document.write('<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dar
                     Contact Links\
                 </a>\
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">\
-                    <li><a href="https://github.com/rydooper"><img class="dropdown-item"\
-                                src="assets/images/github.svg"><p>Github</p></a></li>\
-                    <li><a href="https://www.linkedin.com/in/ryderfranklin2000"><img class="dropdown-item"\
-                                src="../assets/images/linkedin.svg"><p>LinkedIn</p></a></li>\
+                    <li><a href="https://github.com/rydooper"><p>GitHub</p></a></li>\
+                    <li><a href="https://www.linkedin.com/in/ryderfranklin2000"><p>LinkedIn</p></a></li>\
+                    <li><a href="mailto:ryderarenfranklin@gmail.com"><p>Email</p></a></li>\
                 </ul>\
             </li>\
         </ul>\
