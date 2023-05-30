@@ -1,5 +1,5 @@
 body {
-  background-color: #007013da;
+  background-color: white;
 }
 
 h1 {
@@ -40,7 +40,7 @@ p {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-color: lightgrey;
+  background-color: green;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
@@ -51,12 +51,49 @@ p {
   background-color: white;
 }
 
+.card {
+  background-color: rgb(33, 201, 33);
+  padding: 5px;
+}
+
+.inner {
+  padding: 52px;
+  background-color: white;
+  width: 502.667;
+  height: 430.867;
+  text-align: center;
+}
+
+a {
+  color: #e6175c;
+}
+
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #007013da;
+  background-color: #e6175c;
   color: white;
   text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  background-color: #212529;
+  margin: auto;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
 }

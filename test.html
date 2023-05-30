@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/javascript/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./header.js"></script>
+</head>
+
+<body>
+    <br>
+    <div class="main">
+        <div class="inner">
+            <h1> Welcome to my website! </h1>
+            <section id="about" class="section active">
+                <div id="intro">
+                    <p id="intro about" class="paragraphs">
+                        I'm Ryder Franklin and this is my portfolio website!
+                        <br>
+                        On this site, you can find more about me, my qualifications and experience, previous projects of
+                        mine - and, a sneak peak into the future...
+                        <br>
+                        This page is a highlights/summary of everything, if you only have a quick minute! :)
+                    </p>
+                    <p id="intro quals" class="paragraphs">
+                    <h6> To summarise: </h6>
+                    I have a 2.1 BSc in Computer Science with honours from NTU (2019-2022) - which is also where I work!
+                    I'm a research assistant on a project for Asset Management - but more details on that under the
+                    Experience section.
+                    </p>
+                    <p id="intro projects" class="paragraphs">
+                        My best/coolest projects are Artie (a voice assistant, in continuous development), an Autodesk
+                        Forge customised BIM viewer (for work) and my FYP, a webscraper with some machine learning
+                        algorithms for corpus analysis.
+                    </p>
+                    <p id="intro me" class="paragraphs">
+                        Outside of coding, I also love to play video games, to indoor rock climb and I've been learning
+                        Spanish in my spare time. (Though, I'm still quite new at that last one!)
+                    </p>
+                </div>
+            </section>
+            <section id="exp" class="section">
+                <p id="exp exp" class="paragraphs">
+                <h6> Experience </h6>
+                Currently, I work as a research assistant at NTU, on a project in collaboration with NetworkRail,
+                Waldeck and BCU. This project is in Asset Management and frequently involves bridges.
+                <br>
+                I've worked on this project for almost 2 years now (Sept 2021-present) and it's made a lot of progress -
+                in 2021 <i>and</i> 2022,
+                it won the "Best Asset Management Innovation" at Waldeck! Wowza :D <br>
+                You can find out more about it on this <a
+                    href="https://www.waldeckconsulting.com/latest_news/waldeck-scoop-best-asset-management-innovation-winner-for-second-year-in-a-row/"
+                    target="_blank">article</a> or this <a
+                    href="https://www.linkedin.com/posts/waldeckconsulting_waldeck-scoop-best-asset-management-innovation-activity-6992849834529406976-QBvT?utm_source=share&utm_medium=member_desktop"
+                    target="_blank">LinkedIn</a> post.
+                </p>
+                <p id="exp projs" class="paragraphs">
+                <h6> Work Projects </h6>
+                <h5> Autodesk Forge Viewer </h5>
+                <p> This project is an adaptation of Autodesk Forges' CAD viewer. By default, the Forge viewer handles
+                    BIM and DGN files, and has a wide array of customisable features, including extensions. I customised
+                    and maintain this viewer at work. :) </p>
+                <p> Additionally, the code for this is private, but it is similar in appearance to Autodesks' online
+                    viewer, which can be seen <a href="https://viewer.autodesk.com/" target="_blank">here.</a>
+                    A (free) account on Autodesk is required to view this!
+                </p>
+                <h5> Potree Point Cloud Viewer </h5>
+                <p> This project is also an adapation, this time of an open-source WebGL based point cloud renderer
+                    known as Potree. Similarly, the potree viewer has a wide range of customisation available and I
+                    maintain this at work. :) </p>
+                <p> Again, this code is private, but examples of how this looks in browser can be found on <a href="https://github.com/potree/potree" target="_blank">Potree's github repository</a>.</p>
+            </section>
+            <section id="projects" class="section"></section>
+            <section id="extra" class="section"></section>
+            <section id="links-footer">
+                <div id="linkstable" class="table-wrapper">
+                    <div class="table-inner">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#about">About Me</a></td>
+                                    <td><a href="#exp">Experience</a></td>
+                                    <td><a href="#projects">Projects</a></td>
+                                    <td><a href="#extra">Bonus</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./footer.js"></script>
+    <script src="../../assets/javascript/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // JavaScript to handle opening and closing the sections
+        const links = document.querySelectorAll('a[href^="#"]');
+        const sections = document.querySelectorAll('.section');
+
+        links.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                sections.forEach(section => {
+                    if (section === target) {
+                        section.classList.add('active');
+                    } else {
+                        section.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
