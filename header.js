@@ -1,12 +1,12 @@
 document.write('<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">\
 <div class="container-fluid">\
-    <a class="navbar-brand" href="index.html">\
+    <a class="navbar-brand" href="#about">\
         <div title="Home">\
         <img src="../assets/images/customHomeIcon.png" alt="home image" width="40" height="40"\
             class="d-inline-block align-text-top">\
             </div>\
     </a>\
-    <a class="navbar-brand" href="projects.html">\
+    <a class="navbar-brand" href="#projects">\
         <div title="Projects">\
         <img src="../assets/images/customProjectsIcon.png" alt="folder image" width="40" height="40"\
             class="d-inline-block align-text-top">\

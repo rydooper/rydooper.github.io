@@ -21,10 +21,11 @@ h4 {
   align-items: center;
 }
 
-p {
+p, h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   color: black;
   align-items: center;
+  font-family:'Franklin Gothic Light';
 }
 
 .dropdown-item {
@@ -88,6 +89,7 @@ table {
 th, td {
   padding: 8px;
   text-align: left;
+  font-family: 'Franklin Gothic Medium'
 }
 
 .section {
