@@ -1,79 +1,65 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../assets/javascript/bootstrap-5.1.3-dist/css/bootstrap.min.css"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='preconnect' href="https://fonts.googleapis.com">
+  <link rel='preconnect' href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel='stylesheet'>
+  <title> Rydooper's Portfolio </title>
+  <link href="/public/css/style.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/public/css/home.css" rel="stylesheet" type="text/css" media="all">
+  <div class="header">
+    <h1 class="center"> Ryder Franklin: Website Portfolio </h1>
+  </div>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="../assets/images/homeIcon.png" alt="home image" width="30" height="30"
-                    class="d-inline-block align-text-top">
-                Portfolio Home
-            </a>
-            <a class="navbar-brand" href="projects.html">
-                <img src="../assets/images/folder.svg" alt="folder image" width="30" height="30"
-                    class="d-inline-block align-text-top">
-                Projects
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Contact Links
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a href="https://github.com/rydooper"><img class="dropdown-item" src="assets/images/github.svg"></a></li>
-                            <li><a href="https://www.linkedin.com/in/ryderfranklin2000"><img class="dropdown-item" src="../assets/images/linkedin.svg"></a></li>
-                        </ul>
-                    </li>
+    <div class="main">
+        <div class="col-3 left col-s-3 menu">
+            <div class="nav-bar">
+                <div class="subsection">Navigation</div>
+                <ul class="pixelbullets">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/projects.html">Projects</a></li>
+                  <li><a href="/sources.html">Sources</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main id="main">
-        <h1>Welcome to my website!</h1>
-        <p> My name's Ryder Franklin, you may also see the username rydooper crop up on my social media platforms.
-            <br> I'm currently in my final year of university at Nottingham Trent, studying my Bachelors in Computer
-            Science.
-            <br> I also work part-time with NTU's School of Architecture, Design and the Built Environment as a research
-            assistant!
-        </p>
-        <p> Languages I love:
-            Python! JavaScript! CSS! </p>
-        <p> Languages I hate:
-            C++ . Haskell.
-        </p>
-        <p> Some of my current projects are:
-            <br>- a webscraper using selenium to get news articles
-            <br>- a python-based voice assistant, called Artie!
-            <br>- a discord bot that pulls data on funkos from the Funko Europe website
-        </p>
-        <p> I'm a big fan of webscraping and web-development. I also enjoy using Artificial Intelligence and machine
-            learning to make life just that <i>bit</i> easier.
-            <br> Once I have completed my final year at University, I'm hoping to continue developing some of my
-            archived projects (which you can find on my Github readme) and potentially explore using Blender for 3D
-            modelling.
-        </p>
-
-    </main>
-    <footer></footer>
-    <script src="../../assets/javascript/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+                <div id="music">
+                  <div class="subsection">Music</div>
+                  <div id="spotify-container">
+                    <p> Recommended listening for the month: </p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/39iamkNl07OMcr1AMKXtw9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                </div>
+                <div id="updated">
+                    <p> {Site last updated: 05/03/2025} </p>
+                  </div>
+              </div>
+          </div>
+        
+          <div class="col-9 col-s-9 text-body rounded-border">
+            <h1>Welcome to my website!</h1>
+            <p> Heyo! My name's Ryder Franklin - though I tend to use the username rydooper on social media platforms!
+              <br> I currently work for Nottingham Trent University's Architecture and Built Environment department as a Research Assistant on a project working with Network Rail and BCU to create a digital examination environment.
+            </p>
+            <p>I have extensive experience with Python, Web Languages (HTML, CSS, nodeJS and EJS), and Azure deployment technologies within a professional environment. Additionally, I've helped created documentation and done extensive testing of our project. This was mostly manual testing, not automated, though this is an area I'm interesting in learning more about. </p>
+            <p> Within my personal projects, I'm a big fan of webscraping and web-development. I also enjoy using Artificial Intelligence and machine
+              learning to make life just that <i>bit</i> easier. For a while, I've been working on a personal assistant that I call "Artie" which uses response-based aiml to perform various tasks on the pc without needing to use the mouse or keyboard. There's still a lot of work to be done and this has taken a back-burner lately.
+              <br> My big project at the moment, however, is a Visual Novel game using Renpy, which is a Python based game engine.
+              It's fairly simplistic in terms of code but the process of the user actions' flow, storyboarding for the art and plotlines has been a unique challenge!
+              <br> In my spare non-coding time, I've been learning Gaelic and Japanese, and I've been experimenting with photography too.
+            </p>
+            <hr>
+            <p>More details about these projects and some of the other things I've made, along with Sources for any images or content used on here can be found via the navbar!
+                <br> But if you're in a rush, thanks for visiting! If you have any inquires or want further details, feel free to contact me on <a href="https://www.linkedin.com/in/ryderfranklin2000">LinkedIn</a> or via <a href="ryderarenfranklin@gmail.com">Email</a>.
+            </p>
+        
+          </div>
+          <footer></footer>
+    </div>
 </body>
 
 </html>
