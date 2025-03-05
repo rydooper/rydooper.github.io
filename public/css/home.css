@@ -9,6 +9,7 @@ body {
     background-size: cover;
     font-family: 'Kode Mono';
     color: white;
+    overflow: hidden;
     /* text-shadow: 2px 2px 4px #000; */
 }
 
@@ -24,6 +25,12 @@ body {
     position: relative;
     z-index: 2;
     padding: 2rem 2rem 2rem 2rem;
+}
+
+#all {
+    max-height: 750px;
+    overflow: auto;
+    scrollbar-width: thin;
 }
 
 #container {
@@ -63,7 +70,7 @@ u {
 }
 
 a {
-    color: var(--accent-dark);
+    color: var(--accent-light);
 }
 
 .nav-bar {
