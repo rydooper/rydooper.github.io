@@ -43,7 +43,12 @@
       <h1>Projects </h1>
       <hr>
       <div id="all">
-        <div id="current">
+        <div class="tab-bar">
+          <button class="tablink" onclick="openTab(event, 'current')">Current Projects</button>
+          <button class="tablink" onclick="openTab(event, 'professional')">Professional Projects</button>
+          <button class="tablink" onclick="openTab(event, 'completed')">Completed Projects</button>
+        </div>
+        <div id="current" class="tabs" style="display: show;">
           <h2> Current/On-going Projects </h2>
           <subtitle>Artie</subtitle> <br>
           <div>
@@ -58,6 +63,7 @@
               Out of all of my projects, Artie is the most long-term but has been put on the back-burner for now, as his use-case is hyper specific.
             </p>
           </div>
+          <hr>
           <subtitle>Visual Novel - Insulated Hearts </subtitle>
           <div>
             <p>There's no greater wall to climb than love! Well... there is that competition in two weeks time that you accidentally signed up for.
@@ -74,19 +80,29 @@
             </p>
           </div>
         </div>
-        <hr>
-        <div id="professional">
+        <div id="professional" class="tabs" style="display:none;">
           <h2> Professional Projects </h2>
-          <subtitle>NTU's NR Project</subtitle>
+          <subtitle>Panoptic Bridge Management Project</subtitle>
           <div>
-            <p>Testing</p>
+            <p>The project is, essentially, a digital examination environment and asset management system, where engineers can examine an asset (typically a bridge) using the website we created and the tools setup.
+              It largely involves the use of the "Virtual Tour": a pointcloud-based viewer that uses potree, an open-source WebGL-based point cloud renderer, and has an image and a BIM viewer embedded within, alongside some AI elements for aiding identification of defects upon the asset.
+              This project is our entire team's effort, so I'll just focus on what I've worked on.
+              <br>
+              Over the past few years with the team, I've helped setup the Autodesk Forge Viewer, which is what is used on the Virtual Tour for displaying BIM models.
+              Recently, my work has focused on the front-end development, mainly ensuring the datasets are up-to-date with suppliers, and testing both the website (including the API connections to our database) and Virtual Tour. This involves the use of Jira for bug tracking and sometimes Postman for the API-related bugs.
+              <br> I've also created the tutorials, user and workflow documentation for the latest versions of the website, which is another big part of my role.
+              <br> This project is near and dear, as they say, and I'm very proud of what we've managed to make so far. It's even won a few awards! <a href="https://www.waldeckconsulting.com/latest_news/waldeck-scoop-best-asset-management-innovation-winner-for-second-year-in-a-row/" target="_blank">Check out Waldeck's own blog post!</a>
+            </p>
           </div>
         </div>
-        <hr>
-        <div id="completed">
+        <div id="completed" class="tabs" style="display:none;">
           <h2> Completed Projects </h2>
           <subtitle>Final Year Project - BBC Article Webscraper</subtitle>
           <div>
+            <figure>
+              <img src="public/src/img/wordcloud-Ukraine.png" alt="Wordcloud of the most common words in the BBC articles for Ukraine (dated approx. March 2022)" id="wordcloud_img">
+              <figcaption>Wordcloud of the most common words in the BBC articles for Ukraine (dated approx. March 2022)</figcaption>
+            </figure>
             <p> This project, officially titled "Artificial Intelligence: Automatic News Extraction" was for my final
               year project - aka my dissertation - and is open-source.
               <br> Essentially, my project uses a Selenium webscraper to get news articles from the BBC News
@@ -96,10 +112,13 @@
               algorithm that ignores potentially "fake" or malicious news.
               <br>However, there were issues when I researched this further, as BBC and many other news sites have
               strict rules and regulations regarding "bots" and their usage on their sites, so this project remains an academic proof-of-concept.
+              <br>That being said, here's a very dated and personally embarassing word cloud I created (I really should've stripped more of the filler words ('the', 'unknown' and 'image caption' don't belong here at all... =_= )).
             </p>
+            <br>
             <button type="button" id="FYPLink" onclick="window.location.href='https://github.com/rydooper/FYPCode';"> Click to view
               FYP code! </button>
           </div>
+          <hr>
           <subtitle>SCC Coursework </subtitle>
           <div>
             <p>This application was created for my SCC module in third year. It uses the Springboot
@@ -115,6 +134,7 @@
               SCC
               code! </button>
           </div>
+          <hr>
           <subtitle>Machine Learning Coursework</subtitle>
           <div>
             <p>For my machine learning module in second year, I used Stack Overflows' developers survey to predict a
@@ -137,6 +157,7 @@
       <a href="https://www.linkedin.com/in/ryderfranklin2000" target="_blank">LinkedIn</a> | <a href="https://github.com/rydooper" target="_blank">Github</a> | <a href="mailto:ryderarenfranklin@gmail.com" target="_blank">Email</a> | <a href="https://youtu.be/dQw4w9WgXcQ?si=GhYEa1nFiWjNHJnj" target="_blank">Something silly...?</a>
     </footer>
   </div>
+  <script src="/public/js/site.js"></script>
 </body>
 
 </html>

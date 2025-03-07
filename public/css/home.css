@@ -1,3 +1,4 @@
+/* css for the colouring, look + feel of pages */
 :root {
     --accent-light: #ae7bf1;
     --accent-dark: #8549d3;
@@ -36,6 +37,12 @@ body {
 #container {
     border-color: lightskyblue;
     background-color: rgba(236, 236, 236, 0.2);
+}
+
+#wordcloud_img {
+    width: 50%;
+    height: auto;
+    float:inline-end;
 }
 
 .button:hover {
