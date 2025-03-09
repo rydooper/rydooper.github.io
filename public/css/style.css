@@ -2,11 +2,12 @@
 /*settings for mobile as default */
 * {
   box-sizing: border-box;
+  overflow: auto;
 }
 
 body {
-  overflow-x: hidden;
   opacity: 1;
+  max-height: 90vh;
 }
 
 footer {
@@ -76,6 +77,14 @@ a {
   padding: 15px;
 }
 
+.navbar {
+  width: 100%;
+}
+
+#music {
+  display: none;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
@@ -121,6 +130,7 @@ a {
 
   .col-s-9 {
     width: 75%;
+    overflow: auto;
   }
 
   .col-s-10 {
@@ -156,6 +166,10 @@ a {
     width: 25%;
     height: 100%;
     text-align: center;
+  }
+
+  #music {
+    display: inline-block;
   }
 
   .col-3.left {
