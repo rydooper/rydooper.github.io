@@ -1,68 +1,414 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="rydooper"/>
 
+        <link rel='preconnect' href="https://fonts.googleapis.com">
+        <link rel='preconnect' href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel='stylesheet'>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='preconnect' href="https://fonts.googleapis.com">
-  <link rel='preconnect' href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel='stylesheet'>
-  <title> Rydooper's Portfolio </title>
-  <link href="/public/css/style.css" rel="stylesheet" type="text/css" media="all">
-  <link href="/public/css/home.css" rel="stylesheet" type="text/css" media="all">
-  <div class="header">
-    <h1 class="center"> Ryder Franklin: Website Portfolio </h1>
-  </div>
-</head>
+        <title>Rydooper's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="public/src/favicon.ico" />
+        <link href="public/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- navbar-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Portfolio</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Development</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#art">Art</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <img class="masthead-avatar mb-5 rounded" src="public/src/img/me.jpg" alt="..." />
+                <h1 class="masthead-heading text-uppercase mb-0">Ryder Franklin</h1>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <p class="masthead-subheading font-weight-light mb-0">Web Developer - Python Developer - Quality Assurance Tester </p>
+            </div>
+        </header>
+        <!-- portfolio-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Developer Portfolio</h2>
 
-<body>
-  <div class="main">
-    <div class="col-3 col-s-3 menu">
-      <div class="navbar">
-        <div class="subsection">Navigation</div>
-        <ul class="pixelbullets">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/sources.html">Sources</a></li>
-        </ul>
-        <div id="music">
-          <div class="subsection">Music</div>
-          <div id="spotify-container">
-            <p> Recommended listening for the month: </p>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/39iamkNl07OMcr1AMKXtw9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="public/src/img/waldeck_panoptic-bridge-management.png" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="public/src/img/wordcloud-Ukraine.png" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="public/src/img/kaggle-ML-coursework_screenshot.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="public/src/img/winnie_merlot.jpg" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Haigh, I'm Ryder Franklin and this is my portfolio website! My primary experience as a professional developer is within Web Development, automated Python tasks and manual Quality Assurance Testing. This has been within my role as a Research Assistant at NTU.</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">I have a Bachelors in Computer Science from Nottingham Trent University and have worked there as a full-time since 2022, when I graduated. Additionally, I have 3 A-Levels (B-C) and 9 GCSEs (A*-C).</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Outside of work, I like to travel and photograph all kinds of things! I have also been learning (Irish) Gaelic to speak with extended family and I've gotten very into digital art lately. There's a few examples of these on here - feel free to ask me about them!</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- art portfolio-->
+        <section class="page-section portfolio" id="art">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Art Portfolio</h2>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#artPortfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="public/src/img/art/jupe_fs.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#artPortfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="public/src/img/art/sketchbook_tomura_cat_pose.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#artPortfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="public/src/img/art/sketchbook_sb_char_art.png" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#artPortfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="public/src/img/art/art-fight_georges-oc-morgan.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#artPortfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="public/src/img/art/work_portfolio_bg.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#artPortfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="public/src/img/art/art-fight_kermits-oc-della.jpg" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Additional Info</h4>
+                        <p class="lead mb-0">This site was last updated on: 11/04/2025
+                            <br>My current recommended album is: 
+                                <a href="https://open.spotify.com/album/39iamkNl07OMcr1AMKXtw9?si=D6pmvkKdRJ6GM3Q1hizsIw" target="_blank">London Grammar's If You Wait (Deluxe Edition)</a>.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Contact me here!</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="mailto:ryderarenfranklin@gmail.com" target="_blank"><i class="fab fa-fw fa-email"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/ryderfranklin2000" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/rydooper" target="_blank"><i class="fab fa-fw fa-github"></i></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Bootstrap theme source</h4>
+                        <p class="lead mb-0">
+                            Freelance is a free to use, MIT licensed Bootstrap theme created by
+                            <a href="http://startbootstrap.com">Start Bootstrap</a>
+                            .
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="rick">
+                        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Something silly!</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- copyright-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Ryder Franklin 2025</small></div>
         </div>
-        <div id="updated">
-          <p> {Site last updated: 09/03/2025} </p>
+        <!-- portfolio modals-->
+        <!--1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Panoptic Bridge Management</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="public/src/img/waldeck_panoptic-bridge-management.png" alt="..." />
+                                    <caption><small>Image Copyright &copy;Waldeck</small></caption>
+                                    <p class="mb-4"><br>
+                                        The project is a digital examination environment and asset management system, where engineers can examine an asset (typically a bridge) using the website we created and the tools setup. It largely involves the use of the "Virtual Tour": a pointcloud-based viewer that uses potree, an open-source WebGL-based point cloud renderer, and has an image and a BIM viewer embedded within, alongside some AI elements for aiding identification of defects upon the asset. This project is our entire team's effort, so I'll just focus on what I've worked on.
+                                        <br><br>
+                                        Over the past few years with the team, I've helped setup the Autodesk Forge Viewer, which is what is used on the Virtual Tour for displaying BIM models. Recently, my work has focused on the front-end development, ensuring the datasets are up-to-date with suppliers, creating and maintaining the automated Python background tasks, and testing both the website (including the API connections to our database) and Virtual Tour. This involves the use of Jira for bug tracking and sometimes Postman for the API-related bugs. I'm also in charge of the tutorials, user and workflow documentation for the latest versions of the system.
+                                        <br><br>
+                                        This project is near and dear, as they say, and I'm very proud of what we've managed to make so far. Check out the most recent info on it - <a href="https://www.waldeckconsulting.com/latest_news/bridges-conference-2025-qr-2/">here</a>!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-9 col-s-9 text-body rounded-border">
-      <div class="all">
-        <h1>Welcome to my website!</h1>
-        <p> Heyo! My name's Ryder Franklin - though I tend to use the username rydooper on social media platforms!
-          <br> I currently work for Nottingham Trent University's Architecture and Built Environment department as a Research Assistant on a project working with Network Rail and BCU to create a digital examination environment.
-          <br>
-          I have extensive experience with Python, Web Languages (HTML, CSS, nodeJS and EJS), and Azure deployment technologies within a professional environment. Additionally, I've helped created documentation and done extensive testing of our project. This was mostly manual testing, not automated, though this is an area I'm interesting in learning more about.
-          <br><br>
-          Within my personal projects, I'm a big fan of webscraping and web-development. I also enjoy using Artificial Intelligence and machine
-          learning to make life just that <i>bit</i> easier. For a while, I've been working on a personal assistant that I call "Artie" which uses response-based aiml to perform various tasks on the pc without needing to use the mouse or keyboard. There's still a lot of work to be done and this has taken a back-burner lately.
-          <br> My big project at the moment, however, is a Visual Novel game using Renpy, which is a Python based game engine.
-          It's fairly simplistic in terms of code but the process of the user actions' flow, storyboarding for the art and plotlines has been a unique challenge!
-          <br> In my spare non-coding time, I've been learning (Irish) Gaelic and Japanese, and I've been experimenting with photography too.
-          <br><br>
-          More details about these Projects and some of the other things I've made, along with Sources for any images or content used on here can be found via the navbar!
-          <br> But if you're in a rush, thanks for visiting! If you have any inquires or want further details, feel free to contact me on <a href="https://www.linkedin.com/in/ryderfranklin2000" target="_blank">LinkedIn</a> or via <a href="mailto:ryderarenfranklin@gmail.com" target="_blank">Email</a>.
-        </p>
-      </div>
-    </div>
-    <footer>
-      <a href="https://www.linkedin.com/in/ryderfranklin2000" target="_blank">LinkedIn</a> | <a href="https://github.com/rydooper" target="_blank">Github</a> | <a href="mailto:ryderarenfranklin@gmail.com" target="_blank">Email</a> | <a href="https://youtu.be/dQw4w9WgXcQ?si=GhYEa1nFiWjNHJnj" target="_blank">Something silly...?</a>
-    </footer>
-  </div>
-</body>
-
+        <!--2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Artie</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <p class="mb-4">Artie is a personal project of mine that I've been working on since September 2021! He's a voice assistant using AI and Machine Learning, built in Python.
+                                        Currently, his functionality involves a login system, use of the wikipedia API, telling the user a joke, and locking or shutting down the computer.
+                                        <br>
+                                        In many ways, I want Artie to be a program that allows for hands-free use of a PC, which can be very beneficial for people with disabilities that cause muscular atrophy - or even just for users who are busy.
+                                        <br><br>
+                                        In the future, his functionality will also include: more permanent memories (a brain file is in progress!), getting the weather for a given location, connections with spotipy and the ability to open certain applications (e.g. Word, Excel).
+                                        <br>
+                                        My biggest aim for the current version is to package him into an executable file, without the need to install Python or any dependencies, so he's a bit more user-friendly. Once this is setup, additional functionality will be much easier to implement. 
+                                        <br>
+                                        Out of all of my projects, Artie is the most long-term and is undergoing a 2025 overall, as the original repo is very outdated for a AI/ML project.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Visual Novel - Insulated Hearts</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <p class="mb-4">
+                                        There's no greater wall to climb than love! Well... there is that competition at the end of summer that you accidentally signed up for. That wall could be pretty big too.
+                                        You are a new indoor rock climber at the gym and meet the eclectic regulars, who are all very happy to mingle with a new face! <br><br>
+                                        
+                                        This is my most recent project and still a while in the making. Following a lot of visual novel ideas, this is a dating simulater, essentially, with an extended cast of queer/LGBTQ+ characters and various attempts to subvert typical tropes in these games. It's based around an indoor climbing competition event that is upcoming and the player character's various attempts to "get gud" in time for it, while also (potentially) finding someone to stand on on the podium with...
+                                        <br>
+                                        Though I have the story and events planned out, working with Renpy is fairly new and challenging for me - plus, there's quite a few characters to draw. I'm hoping to have the character art and initial workflow complete by Summer 2025, with a demo in the Autumn!
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">FYP - AI: Automatic News Extraction </h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="public/src/img/wordcloud-Ukraine.png" alt="..." />
+                                    <p class="mb-4">This project, officially titled "Artificial Intelligence: Automatic News Extraction" was for my final year project - aka my dissertation - and is open-source.
+                                        My project uses a Selenium webscraper to get news articles from the BBC News website, based on a users' query. This data is then analysed and graphed using hot topic extraction.
+                                        <br>
+                                        For future development, I would have liked to increase the corpus of the project, by adding more websites to the webscraper and implementing further search features, along with a machine learning algorithm that ignores potentially "fake" or malicious news.
+                                        <br><br>
+                                        However, there were issues when I researched this further, as BBC and many other news sites have strict rules and regulations regarding "bots" and their usage on their sites, so this project remains an academic proof-of-concept.
+                                        <br>
+                                        That being said, the image above is a very dated and personally embarassing word cloud I created at the time. I really should've stripped more of the filler words on this ('the', 'unknown' and 'image caption' don't belong here at all... =_= ).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Machine Learning Coursework</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="public/src/img/kaggle-ML-coursework_screenshot.jpg" alt="..." />
+                                    <p class="mb-4">
+                                        For my machine learning module in second year, I used Stack Overflows' developers survey to predict a developers salary, based on the features selected.
+                                        This project is unique in that it is based and runs on Kaggle, using Jupyter Notebook, which allowed me to run the CPU-intense algorithms. It is one of my favourite projects, as the data had some fascinating results.
+                                        <br>
+                                        In the end, I selected 13 features, including "Gender", "Sexuality" and "Trans" (a yes/no question), as these were the ones I was most curious about - were these factors impactful on a developers' salary? Ultimately, my model was rather successful (around 70%) and utilised clustering for prediction.
+                                        <br><br>
+                                        If I were to return to this project, I'd love to repeat this with more samples (Stack Overflow repeat this survey annually) and see how this may differ over the years - and if the increasing use of AI has impacted these results. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Winnie and Merlot</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-vertical rounded mb-5" src="public/src/img/winnie_merlot.jpg" alt="..." />
+                                    <p class="mb-4">I don't really know what else to put here so please enjoy these pictures of my cats - Winnie is the white one, with black spots and Merlot is the tuxedo! They're siblings and love to bother people when they're eating.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="public/js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- bootstrap template found here: https://startbootstrap.com/theme/freelancer/ -->
+    </body>
 </html>
